@@ -1,11 +1,11 @@
-import Navbar from "@/components/Navbar";
+import Para1 from "@/components/Para1";
 import React from "react";
 
 const page = () => {
   return (
     <>
       <div>
-        <Navbar />
+        <Para1 />
       </div>
     </>
   );
