@@ -30,7 +30,7 @@ const Para1 = () => {
 
   return (
     <>
-      <div className="flex justify-center items-center p-4 text-white rounded-lg">
+      <div className="flex justify-center items-center p-4 text-white ">
         <motion.div className="flex mt-20 w-3/4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
