@@ -73,7 +73,7 @@ const Works = () => {
             Here&apos;s some of my projects that I have worked on.
           </motion.p>
           <Link
-            href="#"
+            href="/projects"
             className="inline-flex cursor-pointer text-base text-[#3CCF91] hover:bg-[#141414] rounded-lg px-4 py-2 font-semibold transition-all"
           >
             Explore more →

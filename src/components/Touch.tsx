@@ -3,7 +3,6 @@
 import React from "react";
 import { motion } from "motion/react";
 import Link from "next/link";
-import { PiCertificateFill } from "react-icons/pi";
 import { FaFileAlt } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
@@ -23,18 +22,14 @@ const Touch = () => {
     {
       name: "Resume",
       icon: FaFileAlt,
-      pushUrl: "https://x.com/g44951_ghost",
-    },
-    {
-      name: "Certificate",
-      icon: PiCertificateFill,
-      pushUrl: "https://x.com/g44951_ghost",
+      pushUrl:
+        "https://drive.google.com/file/d/1lzj437Vwvi_fPbsIm3vUFgVGe-5Pdm_c/view?usp=drive_link",
     },
   ];
 
   return (
     <>
-      <div className="max-w-5xl flex mt-16 items-center mx-auto justify-center p-4 mb-60">
+      <div className="max-w-5xl flex mt-16 items-center mx-auto justify-center p-4 mb-40">
         <div className="flex flex-col items-center">
           <h1 className="text-5xl font-bold">Keep In Touch</h1>
           <p className="text-center text-[#8F9094] my-8">
@@ -54,13 +49,12 @@ const Touch = () => {
               <Link href={pushUrl} target="_blank" key={name}>
                 <motion.button
                   whileHover={{
-                    opacity: 0.8,
                     transition: { duration: 0.1, ease: "easeOut" },
                   }}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0, duration: 0.1 }}
-                  className="bg-[#292929] px-4 py-2 cursor-pointer font-bold rounded-md text-center flex gap-2 items-center transition-all"
+                  className="bg-[#141414] hover:bg-[#292929] px-4 py-2 cursor-pointer font-bold rounded-md text-center flex gap-2 items-center transition-all"
                 >
                   {icon &&
                     React.createElement(icon, {
