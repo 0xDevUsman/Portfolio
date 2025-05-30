@@ -51,7 +51,7 @@ const ProjectCard = ({
             </motion.h5>
             <motion.div className="flex gap-4">
               {github ? (
-                <Link href={github}>
+                <Link href={github} target="_blank">
                   <motion.svg
                     whileHover={{ scale: 1.2 }}
                     xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +65,7 @@ const ProjectCard = ({
                   </motion.svg>
                 </Link>
               ) : null}
-              <Link href={live}>
+              <Link href={live} target="_blank">
                 <motion.svg
                   whileHover={{ scale: 1.2 }}
                   xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +91,7 @@ const ProjectCard = ({
               <motion.span
                 key={index}
                 whileHover={{ scale: 1.05 }}
-                className="inline-flex items-center px-3 py-1 rounded-md text-sm font-medium bg-[#2B2C2E] text-white"
+                className="inline-flex cursor-default items-center px-3 py-1 rounded-md text-sm font-medium bg-[#2B2C2E] text-white"
               >
                 {tech}
               </motion.span>
