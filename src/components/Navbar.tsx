@@ -1,8 +1,11 @@
 "use client";
 import React from "react";
 import { motion } from "motion/react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
+
   return (
     <>
       <motion.div
@@ -12,7 +15,10 @@ const Navbar = () => {
         className="flex flex-col items-center"
       >
         <div className="flex justify-between w-3/4 items-center p-4 text-white rounded-lg">
-          <div className="flex items-center space-x-0.5 leading-none">
+          <div
+            onClick={() => router.push("/")}
+            className="flex items-center cursor-pointer space-x-0.5 leading-none"
+          >
             <span className="text-3xl font-semibold text-[#8F9094] align-middle">
               {"{"}
             </span>
@@ -25,10 +31,16 @@ const Navbar = () => {
           </div>
 
           <div className="flex space-x-2 text-lg font-semibold">
-            <span className="cursor-pointer text-base hover:bg-[#141414] rounded-lg px-4 py-2">
+            <span
+              onClick={() => router.push("/")}
+              className="cursor-pointer text-base hover:bg-[#141414] rounded-lg px-4 py-2"
+            >
               Home
             </span>
-            <span className="cursor-pointer text-base hover:bg-[#141414] rounded-lg px-4 py-2">
+            <span
+              onClick={() => router.push("/projects")}
+              className="cursor-pointer text-base hover:bg-[#141414] rounded-lg px-4 py-2"
+            >
               Projects
             </span>
           </div>
