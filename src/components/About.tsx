@@ -28,9 +28,9 @@ const imageVariants = {
 
 const About = () => {
   return (
-    <div className="flex justify-center items-center p-4 text-white rounded-lg mt-36 mb-10">
+    <div className="flex justify-center items-center px-4 py-10 text-white rounded-lg mt-20 sm:mt-36 mb-10">
       <motion.div
-        className="flex flex-col md:flex-row justify-between gap-8 items-center w-full max-w-6xl"
+        className="flex flex-col md:flex-row justify-between items-center gap-12 w-full max-w-6xl"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -38,13 +38,13 @@ const About = () => {
         {/* Text Section */}
         <motion.div className="w-full md:w-1/2" variants={textVariants}>
           <motion.h1
-            className="font-bold text-3xl sm:text-2xl"
+            className="font-bold text-2xl sm:text-3xl"
             variants={textVariants}
           >
             ⚡ About Me
           </motion.h1>
           <motion.p
-            className="text-base mt-6 text-[#8F9094]"
+            className="text-sm sm:text-base mt-4 sm:mt-6 text-[#8F9094]"
             variants={textVariants}
           >
             Hey! I&apos;m Usman Ali, a final-year BCA student at IGNOU, who
@@ -66,12 +66,21 @@ const About = () => {
         </motion.div>
 
         {/* Image Section */}
-        <motion.div className="relative w-[300px]" variants={imageVariants}>
-          <Image src={logo} alt="Logo" width={300} height={300} />
+        <motion.div
+          className="relative w-[200px] sm:w-[250px] md:w-[300px]"
+          variants={imageVariants}
+        >
+          <Image
+            src={logo}
+            alt="Logo"
+            width={300}
+            height={300}
+            className="w-full h-auto"
+          />
           <img
             alt=""
             src="https://svgsilh.com/svg/26432.svg"
-            className="absolute top-[-18px] left-[200px] w-36 text-white opacity-20 -z-10 pointer-events-none"
+            className="absolute top-[-18px] left-[70%] w-24 sm:w-28 md:w-36 text-white opacity-20 -z-10 pointer-events-none"
             style={{ filter: "invert(0.6)" }}
           />
         </motion.div>

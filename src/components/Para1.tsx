@@ -7,6 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { PiCertificateFill } from "react-icons/pi";
+
 const Para1 = () => {
   const socialLinks = [
     {
@@ -33,85 +34,84 @@ const Para1 = () => {
   ];
 
   return (
-    <>
-      <div className="flex justify-center items-center p-4 text-white ">
-        <motion.div className="flex mt-20 w-3/4">
-          <motion.div
+    <div className="flex justify-center items-center p-4 text-white">
+      <motion.div className="flex flex-col mt-20 w-full max-w-6xl px-4">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          className="relative"
+        >
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="relative"
+            className="text-2xl sm:text-3xl font-semibold text-[#3CCF91]"
           >
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-3xl font-semibold text-[#3CCF91]"
-            >
-              <img
-                alt=""
-                src="https://svgsilh.com/svg/26432.svg"
-                className="absolute top-[-20] left-[-30] w-36 text-white opacity-20  -z-10 pointer-events-none mr-2"
-                style={{ filter: "invert(0.6)" }}
-              ></img>
-              Hey there, I&apos;m-
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="text-8xl font-bold text-white"
-            >
-              Usman Ali.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.6 }}
-              className="text-3xl font-semibold mt-6 text-[#8F9094]"
-            >
-              <span className="text-white">Software Developer.</span> A
-              self-taught developer with an <br /> interest in Coding.
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-              className="text-xl  mt-10 text-[#8F9094]"
-            >
-              🚀 Specialized in Next js, React js, Node js, Express, Mongodb,
-              Tailwind Css, Typescript
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.8 }}
-              className="flex gap-6 items-center ml-auto mt-16 flex-wrap"
-            >
-              {socialLinks.map(({ name, icon, pushUrl }) => (
-                <Link href={pushUrl} target="_blank" key={name}>
-                  <motion.button
-                    whileHover={{
-                      transition: { duration: 0.1, ease: "easeOut" },
-                    }}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 0, duration: 0.1 }}
-                    className="bg-[#141414] hover:bg-[#292929] px-4 py-2 cursor-pointer font-bold rounded-md text-center flex gap-2 items-center transition-all"
-                  >
-                    {icon &&
-                      React.createElement(icon, {
-                        className: "w-[16px] h-[16px] text-[#3CCF91]",
-                      })}
-                    {name}
-                  </motion.button>
-                </Link>
-              ))}
-            </motion.div>
+            <img
+              alt=""
+              src="https://svgsilh.com/svg/26432.svg"
+              className="absolute top-[-20px] left-[-30px] w-28 sm:w-36 text-white opacity-20 -z-10 pointer-events-none mr-2"
+              style={{ filter: "invert(0.6)" }}
+            />
+            Hey there, I&apos;m-
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+            className="text-5xl sm:text-8xl font-bold text-white break-words"
+          >
+            Usman Ali.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.6 }}
+            className="text-xl sm:text-3xl font-semibold mt-6 text-[#8F9094]"
+          >
+            <span className="text-white">Software Developer.</span> A
+            self-taught developer with an <br className="hidden sm:block" />{" "}
+            interest in Coding.
+          </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="text-base sm:text-xl mt-10 text-[#8F9094]"
+          >
+            🚀 Specialized in Next js, React js, Node js, Express, Mongodb,
+            Tailwind Css, Typescript
+          </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
+            className="flex flex-wrap gap-4 sm:gap-6 items-center mt-12"
+          >
+            {socialLinks.map(({ name, icon, pushUrl }) => (
+              <Link href={pushUrl} target="_blank" key={name}>
+                <motion.button
+                  whileHover={{
+                    transition: { duration: 0.1, ease: "easeOut" },
+                  }}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0, duration: 0.1 }}
+                  className="bg-[#141414] hover:bg-[#292929] px-4 py-2 cursor-pointer font-bold rounded-md text-center flex gap-2 items-center transition-all text-sm sm:text-base"
+                >
+                  {icon &&
+                    React.createElement(icon, {
+                      className: "w-[16px] h-[16px] text-[#3CCF91]",
+                    })}
+                  {name}
+                </motion.button>
+              </Link>
+            ))}
           </motion.div>
         </motion.div>
-      </div>
-    </>
+      </motion.div>
+    </div>
   );
 };
 

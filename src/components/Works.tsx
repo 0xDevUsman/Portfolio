@@ -63,18 +63,18 @@ const Works = () => {
       viewport={{ once: true, amount: 0.2 }}
       variants={sectionVariants}
     >
-      <motion.div className="max-w-6xl flex flex-col items-center mx-auto">
+      <motion.div className="max-w-6xl w-full flex flex-col items-center mx-auto">
         {/* Header */}
-        <motion.div className="mb-12 text-center">
-          <motion.h1 className="text-4xl font-bold">
+        <motion.div className="mb-10 sm:mb-12 text-center">
+          <motion.h1 className="text-3xl sm:text-4xl font-bold">
             All Creative Works.
           </motion.h1>
-          <motion.p className="text-lg text-[#8F9094] mb-6">
+          <motion.p className="text-sm sm:text-lg text-[#8F9094] mb-6">
             Here&apos;s some of my projects that I have worked on.
           </motion.p>
           <Link
             href="/projects"
-            className="inline-flex cursor-pointer text-base text-[#3CCF91] hover:bg-[#141414] rounded-lg px-4 py-2 font-semibold transition-all"
+            className="inline-flex cursor-pointer text-sm sm:text-base text-[#3CCF91] hover:bg-[#141414] rounded-lg px-4 py-2 font-semibold transition-all"
           >
             Explore more →
           </Link>
@@ -82,7 +82,7 @@ const Works = () => {
 
         {/* Projects Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 gap-20 justify-between"
+          className="grid grid-cols-1 md:grid-cols-2 gap-10 sm:gap-16 lg:gap-20 w-full"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.1 }}
