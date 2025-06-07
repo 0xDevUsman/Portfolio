@@ -3,6 +3,7 @@
 import React from "react";
 import project1 from "@/assets/project1.png";
 import project2 from "@/assets/project2.png";
+import project3 from "@/assets/Project3.png";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 
@@ -63,6 +64,27 @@ const Projects = () => {
       ],
       description:
         "Tech Haven is a full-stack e-commerce app for browsing and purchasing tech products, featuring secure login, a shopping cart, and order tracking. It delivers a smooth and responsive user experience.",
+    },
+    {
+      image: project3,
+      title: "CVNinja",
+      github: "https://github.com/0xDevUsman/AI-Resume-Optimizer.git",
+      live: "",
+      stack: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "ShadCN UI",
+        "NextAuth.js",
+        "OpenAI API",
+        "pdf-lib",
+        "MongoDB",
+        "Mongoose",
+        "Zod",
+        "Vercel",
+      ],
+      description:
+        "CVNinja is a full-stack AI-powered web app that helps users enhance their resumes with intelligent suggestions. Users can upload their resumes to receive keyword, formatting, and content improvements powered by OpenAI. Built with Next.js and MongoDB, CVNinja offers a smooth, secure, and responsive user experience.",
     },
   ];
 
