@@ -10,7 +10,7 @@ const Education = () => {
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="flex flex-col mt-20 w-full max-w-6xl px-4 sm:px-8 lg:px-20"
+        className="flex flex-col mt-20 w-full max-w-7xl px-4 sm:px-8 lg:px-20"
       >
         <motion.div
           initial={{ opacity: 0, y: 20 }}
