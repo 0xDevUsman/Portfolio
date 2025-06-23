@@ -57,7 +57,7 @@ const Works = () => {
 
   return (
     <motion.div
-      className="min-h-screen py-12 px-4 sm:px-6 lg:px-8 text-white"
+      className="pt-12 px-4 sm:px-6 lg:px-8 text-white"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
