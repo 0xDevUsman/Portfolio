@@ -34,7 +34,7 @@ const ProjectCard = ({
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       whileHover={{ scale: 1.02 }}
-      className="max-w-md bg-[#080808] flex flex-col items-center rounded-lg shadow-sm"
+      className="max-w-md bg-[#080808] h-full flex flex-col items-center rounded-lg shadow-sm"
     >
       <div>
         {image ? (
