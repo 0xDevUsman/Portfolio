@@ -5,6 +5,7 @@ import project1 from "@/assets/project1.png";
 import project2 from "@/assets/project2.png";
 import project3 from "@/assets/Project3.png";
 import AiProject1 from "@/assets/AiProject1.png";
+import AiProject2 from "@/assets/AiProject2.png";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 
@@ -104,6 +105,21 @@ const Projects = () => {
       ],
       description:
         "AI-powered fashion e-commerce store built with Vercel's v0.dev. Seamless UI, smart design — shop fashion effortlessly.",
+    },
+    {
+      image: AiProject2,
+      title: "Form Wizard UI",
+      github: "https://github.com/0xDevUsman/Multi-Step-Form-Wizard.git",
+      live: "https://formwizardui.vercel.app/step/1",
+      stack: [
+        "v0.dev (Vercel AI UI generator)",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vercel",
+      ],
+      description:
+        "A sleek, responsive multi-step form wizard that breaks down long forms into simple, manageable steps with validation, animated transitions, and a final review page.",
     },
   ];
 
