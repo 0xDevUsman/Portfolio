@@ -8,6 +8,7 @@ import AiProject1 from "@/assets/AiProject1.png";
 import AiProject2 from "@/assets/AiProject2.png";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
+import { IoMdAlert } from "react-icons/io";
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -177,6 +178,22 @@ const Projects = () => {
             Crafted using cutting-edge AI tools for sleek design, fast
             development, and pixel-perfect UIs.
           </p>
+
+          <div
+            role="alert"
+            className="mt-6 p-4 border-l-4 border-red-500 bg-red-900/10 rounded-r-lg"
+          >
+            <div className="flex items-start gap-3">
+              <IoMdAlert className="w-5 h-5 mt-0.5 text-red-400 flex-shrink-0" />
+              <div className="text-sm text-red-200 leading-relaxed">
+                <span className="font-semibold text-red-100">Note:</span> AI
+                acts as a productivity assistant — all logic, structure, and
+                functionality are written or refined manually. I code every
+                project with performance, maintainability, and real-world use in
+                mind.
+              </div>
+            </div>
+          </div>
         </motion.header>
 
         <motion.div
