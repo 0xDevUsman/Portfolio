@@ -59,9 +59,9 @@ const About = () => {
             impactful projects.
             <br />
             <br />
-            📚 Outside of coding, I enjoy reading books across a variety of
-            topics to expand my knowledge, and I&apos;m also exploring the field
-            of ethical hacking and cybersecurity.
+            📚 Outside of coding, I am passionate about martial arts and
+            motorcycle riding, which help me stay disciplined, focused, and
+            energized in both life and work.
           </motion.p>
         </motion.div>
 
