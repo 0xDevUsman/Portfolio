@@ -72,7 +72,7 @@ const Projects = () => {
       image: project3,
       title: "CVNinja",
       github: "https://github.com/0xDevUsman/AI-Resume-Optimizer.git",
-      live: "",
+      live: "https://cvninja.vercel.app/",
       stack: [
         "Next.js",
         "TypeScript",
