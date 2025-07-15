@@ -98,7 +98,8 @@ const Projects = () => {
       github: "https://github.com/0xDevUsman/Urbanthreadz-Ecommerce.git",
       live: "https://urbanthreadz.vercel.app/",
       stack: [
-        "v0.dev (Vercel AI UI generator)",
+        "ChatGPT",
+        "GitHub Copilot",
         "Next.js",
         "TypeScript",
         "Tailwind CSS",
@@ -113,7 +114,8 @@ const Projects = () => {
       github: "https://github.com/0xDevUsman/Multi-Step-Form-Wizard.git",
       live: "https://formwizardui.vercel.app/step/1",
       stack: [
-        "v0.dev (Vercel AI UI generator)",
+        "ChatGPT",
+        "GitHub Copilot",
         "Next.js",
         "TypeScript",
         "Tailwind CSS",
