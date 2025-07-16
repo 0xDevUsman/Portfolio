@@ -6,6 +6,7 @@ import project2 from "@/assets/project2.png";
 import project3 from "@/assets/Project3.png";
 import AiProject1 from "@/assets/AiProject1.png";
 import AiProject2 from "@/assets/AiProject2.png";
+import AiProject3 from "@/assets/AiProject3.png";
 import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 import { IoMdAlert } from "react-icons/io";
@@ -123,6 +124,22 @@ const Projects = () => {
       ],
       description:
         "A sleek, responsive multi-step form wizard that breaks down long forms into simple, manageable steps with validation, animated transitions, and a final review page.",
+    },
+    {
+      image: AiProject3,
+      title: "Admin Pro",
+      github: "https://github.com/0xDevUsman/AdminPro-App.git",
+      live: "https://adminflow-project.vercel.app/",
+      stack: [
+        "ChatGPT",
+        "GitHub Copilot",
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Vercel",
+      ],
+      description:
+        "A sleek and responsive admin dashboard frontend, featuring interactive charts, clean UI components, dark mode, and smooth animations. Designed for scalability and ease of customization in modern web apps.",
     },
   ];
 
