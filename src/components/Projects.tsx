@@ -104,6 +104,7 @@ const Projects = () => {
         "Next.js",
         "TypeScript",
         "Tailwind CSS",
+        "ShadCN UI",
         "Vercel",
       ],
       description:
@@ -120,6 +121,7 @@ const Projects = () => {
         "Next.js",
         "TypeScript",
         "Tailwind CSS",
+        "ShadCN UI",
         "Vercel",
       ],
       description:
@@ -136,6 +138,7 @@ const Projects = () => {
         "Next.js",
         "TypeScript",
         "Tailwind CSS",
+        "ShadCN UI",
         "Vercel",
       ],
       description:
