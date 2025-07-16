@@ -19,13 +19,13 @@ A sleek and responsive portfolio website to showcase my work, skills, and backgr
 
 ## 📸 Live Preview
 
-👉 [Visit my portfolio](https://www.0xdevusman.me/)
+👉 [Visit Portfolio Website](https://www.0xdevusman.me/)
 
 ## 📬 Contact
 
 Feel free to connect with me:
 
 - **Email**: [ua1226925@gmail.com](mailto:ua1226925@gmail.com)  
-- **LinkedIn**: [Click](https://www.linkedin.com/in/usman-ali-4939ab289/)  
-- **GitHub**: [Click](https://github.com/0xDevUsman)  
-- **X (Twitter)**: [Click](https://x.com/g44951_ghost)
+- **LinkedIn**: [Usman Ali](https://www.linkedin.com/in/usman-ali-4939ab289/)  
+- **GitHub**: [@0xDevUsman](https://github.com/0xDevUsman)  
+- **Twitter (X)**: [Usman Ali](https://x.com/g44951_ghost)
