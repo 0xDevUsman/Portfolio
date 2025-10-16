@@ -4,6 +4,7 @@ import React from "react";
 import project1 from "@/assets/project1.png";
 import project2 from "@/assets/project2.png";
 import project3 from "@/assets/Project3.png";
+import project4 from "@/assets/Project4.png";
 import AiProject1 from "@/assets/AiProject1.png";
 import AiProject2 from "@/assets/AiProject2.png";
 import AiProject3 from "@/assets/AiProject3.png";
@@ -33,6 +34,25 @@ const cardVariants = {
 
 const Projects = () => {
   const projects = [
+    {
+      image: project4,
+      title: "Zentra",
+      github: "https://github.com/0xDevUsman/Zentra.git",
+      live: "https://zentra-ai-bot.vercel.app/chat",
+      stack: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "NextAuth.js",
+        "MongoDB",
+        "OpenAI API",
+        "Vercel",
+      ],
+      description:
+        "Zentra is a full-stack web app that connects users with AI-powered chatbots for personalized assistance. It features real-time chat, and seamless integration with OpenAI's API.",
+    },
     {
       image: project1,
       title: "CareerFlow",
